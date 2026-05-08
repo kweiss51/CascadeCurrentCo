@@ -1,0 +1,14 @@
+{
+  "name": "cascade-current-co",
+  "version": "1.0.0",
+  "description": "PNW Outdoor & Water Gear",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  },
+  "devDependencies": {},
+  "private": true
+}
