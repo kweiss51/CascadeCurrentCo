@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Current Co. - PNW Outdoor & Water Gear</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        .hero { background: url('https://source.unsplash.com/1600x900/?pacific,northwest,water') no-repeat center/cover; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: 3em; margin: 0; }
+        .hero p { font-size: 1.5em; margin: 10px 0; }
+        .cta { background: #228B22; color: white; padding: 15px 30px; border: none; font-size: 1.2em; cursor: pointer; border-radius: 5px; }
+        .values { display: flex; justify-content: space-around; padding: 50px 20px; background: #f4f4f4; }
+        .value { text-align: center; width: 30%; }
+        .value svg { width: 50px; height: 50px; fill: #228B22; } /* Replace with actual icons or use text */
+        .form-section { padding: 50px 20px; text-align: center; max-width: 600px; margin: 0 auto; }
+        .form-section h2 { margin-bottom: 20px; }
+        input[type="email"] { padding: 10px; width: 250px; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #228B22; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .values { flex-direction: column; } .value { width: 100%; margin-bottom: 20px; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Gear Made for the Current.</h1>
+        <p>PNW-inspired outdoor & water goods, made to order.</p>
+        <button class="cta" onclick="document.querySelector('.form-section').scrollIntoView({behavior: 'smooth'})">Notify Me When We Launch</button>
+    </section>
+
+    <section class="values">
+        <div class="value">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/></svg> <!-- Simple house icon for Made to Order -->
+            <h3>Made to Order</h3>
+            <p>Fresh, custom gear for your next adventure.</p>
+        </div>
+        <div class="value">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> <!-- Check icon for Ships from PNW -->
+            <h3>Ships from the PNW</h3>
+            <p>Local vibes, global reach.</p>
+        </div>
+        <div class="value">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> <!-- Mountain icon for Built for Adventure -->
+            <h3>Built for Adventure</h3>
+            <p>Designed for hiking, kayaking, and coastal life.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Be the First to Know</h2>
+        <p>Sign up for launch updates and exclusive PNW drops.</p>
+        <form id="email-form">
+            <input type="email" id="email" placeholder="Your email" required>
+            <button type="submit">Join the Current</button>
+        </form>
+        <p id="success" style="display:none; color: green;">You're in — first drop coming soon!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cascade Current Co. | <a href="https://instagram.com/cascadecurrentco" style="color: #fff;">Instagram</a></p>
+    </footer>
+
+    <script>
+        // Klaviyo embed: Paste your full Klaviyo form JS snippet here, e.g.:
+        // (function() { var klaviyo = document.createElement('script'); klaviyo.src = 'https://static.klaviyo.com/onsite/js/klaviyo.js'; klaviyo.async = true; document.head.appendChild(klaviyo); })();
+
+        // Basic form handler (enhance
